@@ -1,10 +1,9 @@
 package animals.entities;
 
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Bean;
 
-@Component
+
 public class Cat {
-
     private String name ="Vasya";
 
     public String getName() {
@@ -15,4 +14,6 @@ public class Cat {
         this.name = name;
         return this;
     }
+
+
 }
