@@ -8,18 +8,21 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class MyConf {
+
     @Bean
-    public Dog getDog(){
+    public Dog getDog() {
         return new Dog();
     }
+
     @Bean
-    public Cat getCat(Parrot parrot){
+    public Cat getCat(Parrot parrot) {
         Cat cat = new Cat();
-        cat.setName(parrot.getName()+"-killer");
+        cat.setName(parrot.getName() + "-killer");
         return cat;
     }
+
     @Bean
-    public Parrot weNeedMoreParrots(){
+    public Parrot weNeedMoreParrots() {
         return new Parrot();
     }
 }

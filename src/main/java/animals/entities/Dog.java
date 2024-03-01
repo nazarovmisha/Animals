@@ -1,6 +1,5 @@
 package animals.entities;
 
-import org.springframework.context.annotation.Bean;
 
 
 
